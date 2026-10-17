@@ -1,1 +1,0 @@
-// https://cdn.jsdelivr.net/gh/cawtterminal/catppuccin-sakura-vencord@main/theme.css
