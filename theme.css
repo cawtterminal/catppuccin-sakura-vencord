@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&display=swap");
 :root,
 .theme-dark,
 .visual-refresh.theme-dark {
@@ -275,4 +276,15 @@ html.theme-midnight,
 
 [class*="colorBrand_"] {
   box-shadow: 0 0 10px rgba(244, 167, 200, .45) !important;
+}
+:is([class^="username_"], [class*=" username_"]):not([style*="color"]) {
+  color: var(--rosa) !important;
+}
+
+:is([class^="username_"], [class*=" username_"]),
+:is([class^="nameAndDecorators_"], [class*=" nameAndDecorators_"]),
+:is([class^="discriminator_"], [class*=" discriminator_"]) {
+  font-family: "Fredoka", var(--font-primary) !important;
+  font-weight: 600 !important;
+  letter-spacing: .2px;
 }
