@@ -1,121 +1,126 @@
-:root {
-  --bg-dark-violet: #1A011B !important;
-  --bg-dark-violet-secondary: #130014 !important;
-  --bg-dark-violet-tertiary: #0D000E !important;
+@import url("https://catppuccin.github.io/discord/src/catppuccin.css");
 
+:root {
+  --background-primary: #1A011B !important;
+  --background-secondary: #130014 !important;
+  --background-secondary-alt: #0D000E !important;
+  --background-tertiary: #0D000E !important;
+  --background-floating: #130014 !important;
+
+  --header-primary: #FF9BCE !important;
+  --header-secondary: #FF9BCE !important;
+  --text-normal: #FFFFFF !important;
+  --text-muted: #FF9BCE !important;
+  --text-link: #FF9BCE !important;
+
+  --interactive-normal: #FF9BCE !important;
+  --interactive-hover: #FF9BCE !important;
+  --interactive-active: #FF9BCE !important;
+  --interactive-muted: rgba(255, 155, 206, 0.4) !important;
+
+  --brand-experiment: #FF9BCE !important;
   --pink-accent: #FF9BCE !important;
   --pink-opaque: #C47A9E !important;
-  --pink-hover: rgba(255, 155, 206, 0.12) !important;
-  --pink-active: rgba(255, 155, 206, 0.20) !important;
-
-  --radius-round: 50px !important;
-  --radius-medium: 24px !important;
-
-  --background-primary: var(--bg-dark-violet) !important;
-  --background-secondary: var(--bg-dark-violet-secondary) !important;
-  --background-secondary-alt: var(--bg-dark-violet-tertiary) !important;
-  --background-tertiary: var(--bg-dark-violet-tertiary) !important;
-  --background-floating: var(--bg-dark-violet-secondary) !important;
-  
-  --header-primary: var(--pink-accent) !important;
-  --header-secondary: var(--pink-accent) !important;
-  --text-normal: #FFFFFF !important;
-  --text-muted: var(--pink-accent) !important;
-  --text-link: var(--pink-accent) !important;
-  --interactive-normal: var(--pink-accent) !important;
-  --interactive-hover: var(--pink-accent) !important;
-  --interactive-active: var(--pink-accent) !important;
-  --interactive-muted: rgba(255, 155, 206, 0.4) !important;
-  
-  --border-subtle: var(--pink-accent) !important;
-  --modifier-hover: var(--pink-hover) !important;
-  --modifier-active: var(--pink-active) !important;
-  --modifier-selected: rgba(255, 155, 206, 0.15) !important;
 }
 
-[class*="button-"],
-[class*="searchBar-"],
-[class*="scrollableContainer-"],
-[class*="inner-"] {
-  border-radius: var(--radius-medium) !important;
-}
-
-[class*="guilds-"] [class*="wrapper-"] [class*="childWrapper-"],
-[class*="guilds-"] [class*="circleIconButton-"] {
-  background-color: var(--pink-opaque) !important;
-  color: var(--bg-dark-violet) !important;
-  border-radius: var(--radius-round) !important;
-  border: 2px solid var(--pink-accent) !important;
-}
-
-[class*="separator-"],
-[class*="divider-"],
-[class*="sidebar-"],
-[class*="sectionDivider-"],
-hr {
-  border-color: var(--pink-accent) !important;
-  border-radius: var(--radius-round) !important;
-  background-color: var(--pink-accent) !important;
-}
-
-[class*="tabBar-"] [class*="item-"] {
-  border-radius: var(--radius-round) !important;
-  padding: 6px 16px !important;
-}
-
-[class*="questNotice-"],
-[class*="channelNotice-"] {
+[class*="questNotice_"],
+[class*="channelNotice_"],
+[class*="activityPanel_"] {
   display: none !important;
 }
 
-[class*="container-"][class*="withTagAsButton-"],
-[class*="panels-"] > [class*="container-"] {
-  border: 1.5px solid var(--pink-accent) !important;
-  border-radius: var(--radius-medium) !important;
-  box-shadow: 0 0 5px rgba(255, 155, 206, 0.2);
-  margin: 4px;
+[class*="sidebar_"],
+[class*="chat_"],
+[class*="container_"],
+[class*="title_"] {
+  background-color: #1A011B !important;
 }
 
-[class*="panels-"]::before,
-[class*="sidebar-"]::before,
-[class*="chat-"]::before {
-  content: "✿ ♡ ❀";
-  color: var(--pink-accent);
-  font-size: 14px;
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  opacity: 0.8;
-  pointer-events: none;
+[class*="panels_"] > [class*="container_"] {
+  border: 2px solid #FF9BCE !important;
+  border-radius: 25px !important;
+  margin: 6px !important;
+  background-color: #130014 !important;
+  box-shadow: 0 0 8px rgba(255, 155, 206, 0.3) !important;
+  position: relative !important;
 }
 
-[class*="searchBar-"],
-[class*="scrollableContainer-"] {
-  border: 1.5px solid var(--pink-accent) !important;
-  box-shadow: 0 0 5px rgba(255, 155, 206, 0.2);
+[class*="panels_"] > [class*="container_"]::before {
+  content: "✿ ♡ ❀" !important;
+  position: absolute !important;
+  top: -12px !important;
+  right: 15px !important;
+  color: #FF9BCE !important;
+  font-size: 12px !important;
+  background-color: #1A011B !important;
+  padding: 0 4px !important;
 }
 
-[class*="username"],
-[class*="nickname"],
-[class*="header"],
-[class*="subtext"],
-[class*="title-"],
-[class*="name-"] {
-  color: var(--pink-accent) !important;
+[class*="searchBar_"],
+[class*="scrollableContainer_"] {
+  border: 1.5px solid #FF9BCE !important;
+  border-radius: 20px !important;
+  background-color: #0D000E !important;
+  box-shadow: 0 0 6px rgba(255, 155, 206, 0.2) !important;
 }
 
-[class*="clickable-"]:hover,
-[class*="interactive-"]:hover,
-[class*="member-"]:hover {
-  background-color: var(--pink-hover) !important;
-  color: var(--pink-accent) !important;
-  border-radius: var(--radius-medium) !important;
+[class*="guilds_"] [class*="target_"],
+[class*="guilds_"] [class*="circleIconButton_"],
+[class*="guilds_"] [class*="childWrapper_"] {
+  background-color: #C47A9E !important;
+  color: #1A011B !important;
+  border-radius: 50px !important;
+  border: 2px solid #FF9BCE !important;
+}
+
+[class*="tabBar_"] [class*="item_"] {
+  border-radius: 50px !important;
+  border: 1px dashed #FF9BCE !important;
+  margin: 0 4px !important;
+}
+
+[class*="tabBar_"] [class*="item_"][class*="selected_"] {
+  border: 2px solid #FF9BCE !important;
+  background-color: rgba(255, 155, 206, 0.2) !important;
+}
+
+[class*="sidebar_"]::before {
+  content: "✿ ♡ ❀" !important;
+  color: #FF9BCE !important;
+  font-size: 16px !important;
+  padding-left: 15px !important;
+  padding-top: 8px !important;
+  display: block !important;
+}
+
+[class*="nowPlayingColumn_"] {
+  border-left: 1px solid rgba(255, 155, 206, 0.2) !important;
+  background-color: #130014 !important;
+}
+
+[class*="itemCard_"] {
+  border: 1.5px solid #FF9BCE !important;
+  border-radius: 20px !important;
+  background-color: #1A011B !important;
+  margin-bottom: 10px !important;
+}
+
+[class*="username_"],
+[class*="nickname_"],
+[class*="header_"],
+[class*="subtext_"],
+[class*="title_"],
+[class*="name_"] {
+  color: #FF9BCE !important;
+}
+
+[class*="interactive_"]:hover {
+  background-color: rgba(255, 155, 206, 0.12) !important;
+  border-radius: 12px !important;
 }
 
 svg,
-[class*="icon-"],
-[class*="actionIcon-"],
-[class*="button-"] svg {
-  color: var(--pink-accent) !important;
+path {
+  color: #FF9BCE !important;
   fill: currentColor !important;
 }
