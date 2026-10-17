@@ -1,0 +1,44 @@
+:root {
+  --bg-overlay-app-frame: #1b101c;
+  --background-primary: #1b101c;
+  --background-secondary: #140b15;
+  --background-secondary-alt: #0f0810;
+  --background-tertiary: #0a050b;
+  --background-floating: #221424;
+
+  --text-normal: #f3e8ee;
+  --text-muted: #a6929e;
+  --header-primary: #ffffff;
+  --header-secondary: #e2c0d3;
+
+  --brand-experiment: #f4b8e4;
+  --brand-experiment-hover: #f7caeb;
+  --brand-experiment-500: #f4b8e4;
+  --button-positive-background: #f4b8e4;
+  --button-secondary-background: #321c35;
+
+  --background-modifier-selected: rgba(244, 184, 228, 0.15);
+  --background-modifier-hover: rgba(244, 184, 228, 0.08);
+  --background-modifier-active: rgba(244, 184, 228, 0.20);
+  --mention-background: rgba(244, 184, 228, 0.12);
+  --mention-border: #f4b8e4;
+
+  --scrollbar-auto-thumb: #321c35;
+  --scrollbar-auto-track: transparent;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 380px;
+  height: 380px;
+  background-image: url('https://i.imgur.com/vHqY7Z8.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  pointer-events: none;
+  opacity: 0.35;
+  z-index: 1000;
+}
