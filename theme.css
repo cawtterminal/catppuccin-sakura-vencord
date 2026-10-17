@@ -5,8 +5,8 @@
 
   --pink-accent: #FF9BCE !important;
   --pink-opaque: #C47A9E !important;
-  --pink-hover: rgba(255, 155, 206, 0.15) !important;
-  --pink-active: rgba(255, 155, 206, 0.25) !important;
+  --pink-hover: rgba(255, 155, 206, 0.12) !important;
+  --pink-active: rgba(255, 155, 206, 0.20) !important;
 
   --radius-round: 50px !important;
   --radius-medium: 24px !important;
@@ -36,11 +36,7 @@
 [class*="button-"],
 [class*="searchBar-"],
 [class*="scrollableContainer-"],
-[class*="inner-"],
-[class*="item-"],
-[class*="member-"],
-[class*="channel-"],
-[class*="panels-"] {
+[class*="inner-"] {
   border-radius: var(--radius-medium) !important;
 }
 
@@ -67,6 +63,19 @@ hr {
   padding: 6px 16px !important;
 }
 
+[class*="questNotice-"],
+[class*="channelNotice-"] {
+  display: none !important;
+}
+
+[class*="container-"][class*="withTagAsButton-"],
+[class*="panels-"] > [class*="container-"] {
+  border: 1.5px solid var(--pink-accent) !important;
+  border-radius: var(--radius-medium) !important;
+  box-shadow: 0 0 5px rgba(255, 155, 206, 0.2);
+  margin: 4px;
+}
+
 [class*="panels-"]::before,
 [class*="sidebar-"]::before,
 [class*="chat-"]::before {
@@ -80,7 +89,6 @@ hr {
   pointer-events: none;
 }
 
-[class*="panels-"],
 [class*="searchBar-"],
 [class*="scrollableContainer-"] {
   border: 1.5px solid var(--pink-accent) !important;
@@ -98,9 +106,7 @@ hr {
 
 [class*="clickable-"]:hover,
 [class*="interactive-"]:hover,
-[class*="item-"]:hover,
-[class*="member-"]:hover,
-[class*="channel-"]:hover {
+[class*="member-"]:hover {
   background-color: var(--pink-hover) !important;
   color: var(--pink-accent) !important;
   border-radius: var(--radius-medium) !important;
