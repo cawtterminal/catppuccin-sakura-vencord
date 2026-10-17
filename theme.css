@@ -161,3 +161,54 @@
   background-color: rgba(244, 167, 200, .2) !important;
   color: var(--rosa-suave) !important;
 }
+html.theme-midnight,
+.theme-midnight,
+.visual-refresh.theme-midnight {
+  --interactive-normal: var(--rosa) !important;
+  --interactive-hover: var(--rosa-suave) !important;
+  --icon-default: var(--rosa) !important;
+  --icon-muted: var(--rosa-fuerte) !important;
+  --icon-strong: var(--rosa-suave) !important;
+  --channel-icon: var(--rosa) !important;
+  --channels-default: var(--rosa-suave) !important;
+  --header-secondary: var(--rosa) !important;
+  --text-link: var(--rosa) !important;
+  --background-modifier-hover: rgba(244, 167, 200, .10) !important;
+  --background-modifier-selected: rgba(244, 167, 200, .18) !important;
+  --background-modifier-active: rgba(244, 167, 200, .22) !important;
+  --brand-500: var(--rosa) !important;
+  --brand-560: var(--rosa-fuerte) !important;
+}
+
+[class^="panels_"],
+[class*=" panels_"] {
+  background-image: var(--corazon), var(--corazon), var(--corazon) !important;
+  background-repeat: no-repeat !important;
+  background-size: 14px, 9px, 7px !important;
+  background-position: right 10px top 6px, right 26px top 4px, right 20px top 18px !important;
+}
+
+[class^="peopleColumn_"] [class^="searchBar_"],
+[class^="peopleColumn_"] [class*=" searchBar_"],
+[class*=" peopleColumn_"] [class^="searchBar_"],
+[class*=" peopleColumn_"] [class*=" searchBar_"] {
+  background-image: var(--corazon), var(--corazon) !important;
+  background-repeat: no-repeat !important;
+  background-size: 16px, 10px !important;
+  background-position: right 14px center, right 34px top 8px !important;
+}
+
+[class^="tabBar_"] [class*="selected_"],
+[class*=" tabBar_"] [class*="selected_"] {
+  box-shadow: 0 0 8px rgba(244, 167, 200, .45) !important;
+}
+
+[class^="addFriend_"],
+[class*=" addFriend_"] {
+  box-shadow: 0 0 12px rgba(244, 167, 200, .6) !important;
+}
+
+[class^="panels_"],
+[class*=" panels_"] {
+  box-shadow: 0 0 12px rgba(244, 167, 200, .25) !important;
+}
