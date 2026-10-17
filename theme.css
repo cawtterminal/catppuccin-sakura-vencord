@@ -1,44 +1,62 @@
 :root {
-  --bg-overlay-app-frame: #1b101c;
-  --background-primary: #1b101c;
-  --background-secondary: #140b15;
-  --background-secondary-alt: #0f0810;
-  --background-tertiary: #0a050b;
-  --background-floating: #221424;
+  --bg-overlay-app-frame: #180e1b;
+  --background-primary: #180e1b;
+  --background-secondary: #120915;
+  --background-secondary-alt: #0c050e;
+  --background-tertiary: #080309;
+  --background-floating: #201124;
+  --background-nested-floating: #180e1b;
+  --background-mobile-primary: #180e1b;
+  --background-mobile-secondary: #120915;
 
-  --text-normal: #f3e8ee;
-  --text-muted: #a6929e;
+  --text-normal: #f7ebf3;
+  --text-muted: #b09bb8;
   --header-primary: #ffffff;
-  --header-secondary: #e2c0d3;
+  --header-secondary: #f4cae8;
+  --interactive-normal: #d8b4dc;
+  --interactive-hover: #f7caeb;
+  --interactive-active: #ffffff;
+  --interactive-selected: #f4b8e4;
 
   --brand-experiment: #f4b8e4;
   --brand-experiment-hover: #f7caeb;
   --brand-experiment-500: #f4b8e4;
+  --brand-experiment-600: #e5a4d3;
   --button-positive-background: #f4b8e4;
-  --button-secondary-background: #321c35;
+  --button-positive-background-hover: #f7caeb;
+  --button-secondary-background: #2a152d;
+  --button-secondary-background-hover: #3b1e3e;
+  --button-outline-primary-border: #f4b8e4;
+  --button-outline-primary-text: #f4b8e4;
 
-  --background-modifier-selected: rgba(244, 184, 228, 0.15);
-  --background-modifier-hover: rgba(244, 184, 228, 0.08);
-  --background-modifier-active: rgba(244, 184, 228, 0.20);
-  --mention-background: rgba(244, 184, 228, 0.12);
+  --background-modifier-selected: rgba(244, 184, 228, 0.22);
+  --background-modifier-hover: rgba(244, 184, 228, 0.12);
+  --background-modifier-active: rgba(244, 184, 228, 0.28);
+  --mention-background: rgba(244, 184, 228, 0.18);
   --mention-border: #f4b8e4;
 
-  --scrollbar-auto-thumb: #321c35;
-  --scrollbar-auto-track: transparent;
+  --scrollbar-auto-thumb: #f4b8e4;
+  --scrollbar-auto-track: #120915;
+  --scrollbar-thin-thumb: #f4b8e4;
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 380px;
-  height: 380px;
-  background-image: url('https://i.imgur.com/vHqY7Z8.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top right;
-  pointer-events: none;
-  opacity: 0.35;
-  z-index: 1000;
+#app-mount,
+.app-3xd6d0,
+.bg-1Q221n,
+.container-1e222,
+.chat-2Z3I1e {
+  background-color: #180e1b !important;
+}
+
+::selection {
+  background-color: #f4b8e4 !important;
+  color: #180e1b !important;
+}
+
+[class*="slider"] [class*="barFill"] {
+  background-color: #f4b8e4 !important;
+}
+
+[class*="control-"] [class*="checked-"] {
+  background-color: #f4b8e4 !important;
 }
