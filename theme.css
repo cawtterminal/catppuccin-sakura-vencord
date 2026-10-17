@@ -1,62 +1,115 @@
 :root {
-  --bg-overlay-app-frame: #180e1b;
-  --background-primary: #180e1b;
-  --background-secondary: #120915;
-  --background-secondary-alt: #0c050e;
-  --background-tertiary: #080309;
-  --background-floating: #201124;
-  --background-nested-floating: #180e1b;
-  --background-mobile-primary: #180e1b;
-  --background-mobile-secondary: #120915;
+  --bg-dark-violet: #1A011B !important;
+  --bg-dark-violet-secondary: #130014 !important;
+  --bg-dark-violet-tertiary: #0D000E !important;
 
-  --text-normal: #f7ebf3;
-  --text-muted: #b09bb8;
-  --header-primary: #ffffff;
-  --header-secondary: #f4cae8;
-  --interactive-normal: #d8b4dc;
-  --interactive-hover: #f7caeb;
-  --interactive-active: #ffffff;
-  --interactive-selected: #f4b8e4;
+  --pink-accent: #FF9BCE !important;
+  --pink-opaque: #C47A9E !important;
+  --pink-hover: rgba(255, 155, 206, 0.15) !important;
+  --pink-active: rgba(255, 155, 206, 0.25) !important;
 
-  --brand-experiment: #f4b8e4;
-  --brand-experiment-hover: #f7caeb;
-  --brand-experiment-500: #f4b8e4;
-  --brand-experiment-600: #e5a4d3;
-  --button-positive-background: #f4b8e4;
-  --button-positive-background-hover: #f7caeb;
-  --button-secondary-background: #2a152d;
-  --button-secondary-background-hover: #3b1e3e;
-  --button-outline-primary-border: #f4b8e4;
-  --button-outline-primary-text: #f4b8e4;
+  --radius-round: 50px !important;
+  --radius-medium: 24px !important;
 
-  --background-modifier-selected: rgba(244, 184, 228, 0.22);
-  --background-modifier-hover: rgba(244, 184, 228, 0.12);
-  --background-modifier-active: rgba(244, 184, 228, 0.28);
-  --mention-background: rgba(244, 184, 228, 0.18);
-  --mention-border: #f4b8e4;
-
-  --scrollbar-auto-thumb: #f4b8e4;
-  --scrollbar-auto-track: #120915;
-  --scrollbar-thin-thumb: #f4b8e4;
+  --background-primary: var(--bg-dark-violet) !important;
+  --background-secondary: var(--bg-dark-violet-secondary) !important;
+  --background-secondary-alt: var(--bg-dark-violet-tertiary) !important;
+  --background-tertiary: var(--bg-dark-violet-tertiary) !important;
+  --background-floating: var(--bg-dark-violet-secondary) !important;
+  
+  --header-primary: var(--pink-accent) !important;
+  --header-secondary: var(--pink-accent) !important;
+  --text-normal: #FFFFFF !important;
+  --text-muted: var(--pink-accent) !important;
+  --text-link: var(--pink-accent) !important;
+  --interactive-normal: var(--pink-accent) !important;
+  --interactive-hover: var(--pink-accent) !important;
+  --interactive-active: var(--pink-accent) !important;
+  --interactive-muted: rgba(255, 155, 206, 0.4) !important;
+  
+  --border-subtle: var(--pink-accent) !important;
+  --modifier-hover: var(--pink-hover) !important;
+  --modifier-active: var(--pink-active) !important;
+  --modifier-selected: rgba(255, 155, 206, 0.15) !important;
 }
 
-#app-mount,
-.app-3xd6d0,
-.bg-1Q221n,
-.container-1e222,
-.chat-2Z3I1e {
-  background-color: #180e1b !important;
+[class*="button-"],
+[class*="searchBar-"],
+[class*="scrollableContainer-"],
+[class*="inner-"],
+[class*="item-"],
+[class*="member-"],
+[class*="channel-"],
+[class*="panels-"] {
+  border-radius: var(--radius-medium) !important;
 }
 
-::selection {
-  background-color: #f4b8e4 !important;
-  color: #180e1b !important;
+[class*="guilds-"] [class*="wrapper-"] [class*="childWrapper-"],
+[class*="guilds-"] [class*="circleIconButton-"] {
+  background-color: var(--pink-opaque) !important;
+  color: var(--bg-dark-violet) !important;
+  border-radius: var(--radius-round) !important;
+  border: 2px solid var(--pink-accent) !important;
 }
 
-[class*="slider"] [class*="barFill"] {
-  background-color: #f4b8e4 !important;
+[class*="separator-"],
+[class*="divider-"],
+[class*="sidebar-"],
+[class*="sectionDivider-"],
+hr {
+  border-color: var(--pink-accent) !important;
+  border-radius: var(--radius-round) !important;
+  background-color: var(--pink-accent) !important;
 }
 
-[class*="control-"] [class*="checked-"] {
-  background-color: #f4b8e4 !important;
+[class*="tabBar-"] [class*="item-"] {
+  border-radius: var(--radius-round) !important;
+  padding: 6px 16px !important;
+}
+
+[class*="panels-"]::before,
+[class*="sidebar-"]::before,
+[class*="chat-"]::before {
+  content: "✿ ♡ ❀";
+  color: var(--pink-accent);
+  font-size: 14px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+[class*="panels-"],
+[class*="searchBar-"],
+[class*="scrollableContainer-"] {
+  border: 1.5px solid var(--pink-accent) !important;
+  box-shadow: 0 0 5px rgba(255, 155, 206, 0.2);
+}
+
+[class*="username"],
+[class*="nickname"],
+[class*="header"],
+[class*="subtext"],
+[class*="title-"],
+[class*="name-"] {
+  color: var(--pink-accent) !important;
+}
+
+[class*="clickable-"]:hover,
+[class*="interactive-"]:hover,
+[class*="item-"]:hover,
+[class*="member-"]:hover,
+[class*="channel-"]:hover {
+  background-color: var(--pink-hover) !important;
+  color: var(--pink-accent) !important;
+  border-radius: var(--radius-medium) !important;
+}
+
+svg,
+[class*="icon-"],
+[class*="actionIcon-"],
+[class*="button-"] svg {
+  color: var(--pink-accent) !important;
+  fill: currentColor !important;
 }
